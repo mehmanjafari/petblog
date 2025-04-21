@@ -1,0 +1,118 @@
+.search {
+    background-color: #fff;
+    width: 500px;
+    position: relative;
+}
+
+.search__body {
+    border: 1px solid var(--soft-beige-border);
+    border-radius: 65px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+}
+
+.search__output {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    height: 100%;
+    padding: 0 6px 0 0;
+}
+
+.search__form {
+    flex: 1 1 auto;
+}
+
+.search__input {
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 18px;
+}
+
+.searchForm__input::placeholder {
+    color: #8c8c8c;
+}
+
+.search__closeBtn {
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: all 0.3s;
+    display: none;
+}
+
+.search__searchBtn {
+    background-color: var(--soft-beige);
+    height: 100%;
+    width: 70px;
+    border-left: 1px solid var(--soft-beige-border);
+}
+
+.search__tippy {
+    background-color: var(--soft-beige);
+    border: 1px solid var(--soft-beige-border);
+    border-radius: 16px;
+    padding: 16px 0;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+
+.tippySearch {
+}
+
+.tippySearch__list {
+}
+
+.tippySearch__item {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    cursor: default;
+    padding: 6px 18px;
+}
+
+.tippySearch__item img {
+    height: 18px;
+}
+
+.tippySearch__item div {
+    font-size: 16px;
+}
+
+@media (max-width: 578.98px) {
+    .search {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .search__body {
+        border-radius: 0;
+    }
+
+    .search__searchBtn {
+        border-right: 1px solid var(--soft-beige-border);
+    }
+}
+
+@media (min-width: 992.98px) {
+    .search__closeBtn:hover,
+    .search__closeBtn:focus {
+        background-color: #ebebeb;
+    }
+
+    .tippySearch__item:hover,
+    .tippySearch__item:focus {
+        background-color: #efe7dd;
+    }
+    .search__searchBtn:focus {
+        background-color: #efe7dd;
+    }
+}

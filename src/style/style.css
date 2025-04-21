@@ -1,0 +1,27 @@
+/* Import */
+@import "./fonts";
+@import "./reset";
+@import "./common";
+
+/* Основные стили */
+.active {
+    display: block;
+}
+
+.active-flex {
+    display: flex;
+}
+
+.active-tippy {
+    display: block;
+}
+
+@media (max-width: 578.98px) {
+    .active-tippy {
+        border-radius: 0;
+        top: 40px;
+        height: calc(100vh - 100px);
+        overflow: auto;
+        display: block;
+    }
+}

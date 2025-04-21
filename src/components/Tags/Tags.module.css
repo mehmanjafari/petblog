@@ -1,0 +1,32 @@
+.tags {
+    background-color: var(--soft-beige);
+    height: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tags__container {
+}
+
+.tags__items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tags__item {
+}
+
+.tags__item a {
+    font-weight: 500;
+    color: #000;
+    padding: 6px 10px;
+}
+
+@media (min-width: 992.98px) {
+    .tags__item a:hover,
+    .tags__item a:focus {
+        text-decoration: underline;
+    }
+}

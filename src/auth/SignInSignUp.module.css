@@ -1,0 +1,79 @@
+.auth {
+}
+
+.auth__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 22px;
+}
+
+.auth__subTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #282828;
+    line-height: 26px;
+    margin-bottom: 22px;
+}
+
+.auth__subTitle a {
+    font-weight: 600;
+    color: #000;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.authForm__input {
+    background-color: transparent;
+    height: 52px;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+
+.authForm__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.authForm__checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.authForm__btn {
+    background-color: #282828;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #fff;
+    padding: 14px 24px;
+}
+
+@media (max-width: 578.98px) {
+    .auth__title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .auth__subTitle {
+        margin-bottom: 16px;
+    }
+
+    .auth__subTitle a {
+        font-weight: 600;
+        color: #000;
+    }
+
+    .authForm__btn {
+        padding: 10px 24px;
+    }
+}
